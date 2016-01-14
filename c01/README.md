@@ -236,8 +236,8 @@ EOF在Windows中为Ctrl+Z；Unix和Mac OS中为Ctrl+D；
 在1.11答案已经做了相同的处理。
 ### 练习1.20
 ```cpp
-# include <iostream>
-# include "Sales_item.h"
+#include <iostream>
+#include "Sales_item.h"
 using namespace std;
 
 int main(){
