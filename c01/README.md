@@ -248,6 +248,7 @@ EOF在Windows中为Ctrl+Z；Unix和Mac OS中为Ctrl+D；
 		cout << itemAll << endl;
 		return 0;
 	}
+![1.22 程序运行结果](https://github.com/leolfw/cppPrimer5th/blob/master/images/1_22.PNG)
 ### 练习1.23
 	#include <iostream>
 	#include "Sales_item.h"
