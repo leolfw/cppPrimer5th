@@ -62,6 +62,7 @@ L"a" 宽字符字符串型字面值，类型是wchar_t
 10u unsigned int
 10.=10.0 double
 10e-2 10^-2，即0.01
+
 ### 练习2.6
 ```cpp
 int month = 9, day = 7;
@@ -70,6 +71,7 @@ int month = 09, day = 07;
 采用字面值对int类型进行初始化，其中'09'和‘07’表示八进制数值。  
 '09'编译不成功，八进制中没有数字9。  
 '07'和‘7’表示相同数值。
+
 ### 练习2.7
 1.  "Who goes with F\145rgus?\012"
 F\145为八进制的泛化的转义序列，ASC编码的101，即e；  
@@ -83,6 +85,7 @@ F\145为八进制的泛化的转义序列，ASC编码的101，即e；
 long int
 4. 3.14L
 long double
+
 ### 练习2.8
 ```cpp
 #include <iostream>
@@ -93,7 +96,10 @@ int main(){
 	return 0;
 }
 ```
+
 ![2.8.1 程序运行结果](https://github.com/leolfw/cppPrimer5th/blob/master/images/2_8_1.png)
+
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -101,7 +107,10 @@ int main(){
 	cout << "\62\t\115\n";
 	return 0;
 }
+```
+
 ![2.8.2 程序运行结果](https://github.com/leolfw/cppPrimer5th/blob/master/images/2_8_2.png)
+
 ### 练习2.9
 1. std::cin >> int input_value;
 输入运算符的右边必须为对象，不能是初始化语句。
@@ -111,6 +120,7 @@ int main(){
 错误，双重初始化了。
 4. int i = 3.14;
 正确，会自动进行类型转换。
+
 ### 练习2.10
 globar_str 空串
 global_int 0
@@ -118,6 +128,7 @@ local_int 未定义
 local_str 空串
 函数内的基本类型，在未定义情况下是不确定的；函数外的为0；
 字符串未定义就是空串。
+
 ### 练习2.11
 1. extern int ix = 1024;
 定义
@@ -125,6 +136,7 @@ local_str 空串
 定义
 3. extern int iz;
 声明
+
 ### 练习2.12
 1. int double = 3.14;
 错误。关键字不能作变量名。
@@ -136,6 +148,7 @@ local_str 空串
 错误。不能以数字开头。
 5. double Double = 3.14;
 正确。
+
 ### 练习2.13
 ```cpp
 #include <iostream>
@@ -148,6 +161,7 @@ int main(){
 }
 ```
 局部变量覆盖了全局变量，所以i = 100; j = 100;
+
 ### 练习 2.14
 ```cpp
 #include <iostream>
@@ -163,6 +177,7 @@ int main(){
 ```
 100 45
 局部变量和全局变量的作用域不同。
+
 ### 练习2.15
 1. int ival = 1.01;
 合法。
@@ -172,6 +187,7 @@ int main(){
 合法。
 4. int &rval3;
 不合法。引用必须初始化。
+
 ### 练习2.16
 ```cpp
 int i = 0, &r1 = i; 
@@ -185,6 +201,8 @@ double d = 0, &r2 = d;
 合法。将double d的值赋予int i。
 4. r1 = d;
 合法。将int i的值赋予double i。
+
 ### 练习2.17
 10 10
+
 ### 练习2.18
